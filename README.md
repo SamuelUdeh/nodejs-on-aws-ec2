@@ -45,9 +45,12 @@ PUBLISHABLE_KEY=""
 SECRET_KEY=""
 # Initialise and start the project
 npm install
+
 npm run start
+
 NOTE - I edited the inbound rules in the security group of our EC2, in order
 to allow traffic from our particular port. 
+
 Project is deployed on AWS and can be accessed using the IPV4 Public Ip address
 
 

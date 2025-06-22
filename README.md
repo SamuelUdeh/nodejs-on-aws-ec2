@@ -18,9 +18,10 @@ SECRET_KEY=""
 
 # Initialise and start the project
 npm install
+
 npm run start
 # Set up an AWS EC2 instance
-Create and log in as IAM user to your AWS Console
+Create and log in as an IAM user to your AWS Console
 
 Access Type - Password
 

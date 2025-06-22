@@ -78,8 +78,9 @@ ssh -i keypair.pem ec2-user@<your-ec2-public-ip>
 ``
 
 # For Ubuntu, use:
+
 ``
-# ssh -i keypair.pem ubuntu@<your-ec2-public-ip>
+ssh -i keypair.pem ubuntu@<your-ec2-public-ip>
 ``
 
 ![NodeEC2SSH](https://github.com/user-attachments/assets/5cd30456-bd19-4c9e-becd-fefe369b6be3)
@@ -93,7 +94,6 @@ sudo yum update -y
 curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install -y nodejs
 ``
-
 
 **On Ubuntu:**
 

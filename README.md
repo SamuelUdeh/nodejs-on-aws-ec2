@@ -38,13 +38,17 @@ SECRET_KEY=""
 ``
 npm install
 ``
+![INSTALL](https://github.com/user-attachments/assets/579f3963-d8c3-404a-bf4c-51dec61c5b36)
 
 ``
 npm run start
 ``
 
+![START](https://github.com/user-attachments/assets/c60b23c7-ce0f-4130-ae0c-3aac90f2d9e2)
 
-![NodeAWSNPMinstallrun](https://github.com/user-attachments/assets/bf4a091b-6970-4e29-af2b-00ba14840e37)
+## Accessing Your Application
+
+Once your application is running, you can see your app at [http://localhost:3000](http://localhost:3000).
 
 ![LocalTEST](https://github.com/user-attachments/assets/bc415bb9-9a6c-4e1f-a747-206d669cd141)
 

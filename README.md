@@ -37,9 +37,9 @@ SECRET_KEY=""
 
 ``
 npm install
-```
+``
 
-```
+``
 npm run start
 ``
 

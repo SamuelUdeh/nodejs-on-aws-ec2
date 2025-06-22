@@ -2,7 +2,7 @@
 # Testing the project locally
 # Clone this project
 
-git clone https://github.com/verma-kunal/AWS-Session.git
+git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 
 # Setup the following environment variables - (.env) file
 

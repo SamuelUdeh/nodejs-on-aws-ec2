@@ -12,7 +12,7 @@ This project demonstrates how to deploy a simple Node.js application on an AWS E
 
 1. **Clone this project:**
 
-``
+```bash
 git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 ``
 

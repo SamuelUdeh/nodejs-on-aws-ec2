@@ -20,7 +20,7 @@ git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 2. **Setup Environment Variables:**
    Create a .env file with the following content
    
-``
+```bash
 DOMAIN= ""
 
 PORT=3000
@@ -30,14 +30,14 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 
 SECRET_KEY=""
-``
+
 
 3. **Initialise and start the project**
 
-``
+```bash
 npm install
 npm run start
-``
+
 
 ![NodeAWSNPMinstallrun](https://github.com/user-attachments/assets/bf4a091b-6970-4e29-af2b-00ba14840e37)
 
@@ -65,13 +65,22 @@ npm run start
 
 ## Step 2: SSH Into EC2
 
-``
+```bash
 chmod 400 rent.pem
+
+
+# For Amazon Linux, use:
+
+
+```bash
 ssh -i keypair.pem ec2-user@<your-ec2-public-ip>
 
+
 # For Ubuntu, use:
+
+```bash
 # ssh -i keypair.pem ubuntu@<your-ec2-public-ip>
-``
+
 
 ![NodeEC2SSH](https://github.com/user-attachments/assets/5cd30456-bd19-4c9e-becd-fefe369b6be3)
 
@@ -79,43 +88,43 @@ ssh -i keypair.pem ec2-user@<your-ec2-public-ip>
 
 **On Amazon Linux:**
 
-``
+```bash
 sudo yum update -y
 curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install -y nodejs
-``
+
 
 **On Ubuntu:**
 
-``
+```bash
 sudo apt update
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install -y nodejs
-``
+
 
 ![NodeAWSNodeInstall](https://github.com/user-attachments/assets/0e1c6b23-d1f5-4380-9a3f-1065b4d165a5)
 
 ## Step 4: Install Git
 
-``
+```bash
 sudo yum install git -y
-``
+
 
 ![NodeAWSGitInstall](https://github.com/user-attachments/assets/f79c8239-5948-4c6c-b4c9-fde5ba968fa8)
 
 ## Step 5: Upload Your Node.js App to EC2
 **Clone the Project in the Remote VM**
 
-``
+```bash
 git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
-``
+
 
 ![NodeAWSgitclone](https://github.com/user-attachments/assets/557d0bcc-462c-424d-9cac-7976de2d87ba)
 
 ## Step 6: Set Up Environment Variables
 Create a .env file with the same content as before:
 
-``
+```bash
 DOMAIN=""
 
 PORT=3000
@@ -125,14 +134,14 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 
 SECRET_KEY=""
-``
+
 
 ## Step 7: Initialize and Start the Project
 
-``
+```bash
 npm install
 npm run start
-``
+
 
 ![NodeAWSNPMinstallrun](https://github.com/user-attachments/assets/e0b723c8-7a98-4b3f-951f-24a0cdeced56)
 

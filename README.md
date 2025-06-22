@@ -20,7 +20,7 @@ git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 2. **Setup Environment Variables:**
    Create a .env file with the following content
    
-``
+
 DOMAIN= ""
 
 PORT=3000
@@ -30,7 +30,7 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 
 SECRET_KEY=""
-``
+
 
 
 3. **Initialise and start the project**
@@ -78,7 +78,6 @@ ssh -i keypair.pem ec2-user@<your-ec2-public-ip>
 ``
 
 # For Ubuntu, use:
-
 ``
 # ssh -i keypair.pem ubuntu@<your-ec2-public-ip>
 ``
@@ -127,7 +126,7 @@ git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 ## Step 6: Set Up Environment Variables
 Create a .env file with the same content as before:
 
-``
+
 DOMAIN=""
 
 PORT=3000
@@ -137,7 +136,6 @@ STATIC_DIR="./client"
 PUBLISHABLE_KEY=""
 
 SECRET_KEY=""
-``
 
 
 ## Step 7: Initialize and Start the Project

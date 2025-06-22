@@ -14,7 +14,6 @@ This project demonstrates how to deploy a simple Node.js application on an AWS E
 
 ```bash
 git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
-``
 
 
 2. **Setup Environment Variables:**
@@ -65,6 +64,7 @@ npm run start
 
 ## Step 2: SSH Into EC2
 
+Make sure to set the correct permissions for your key file by running the following command:
 ```bash
 chmod 400 rent.pem
 

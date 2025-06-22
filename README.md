@@ -7,9 +7,13 @@ git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 # Setup the following environment variables - (.env) file
 
 DOMAIN= ""
+
 PORT=3000
+
 STATIC_DIR="./client"
+
 PUBLISHABLE_KEY=""
+
 SECRET_KEY=""
 
 # Initialise and start the project

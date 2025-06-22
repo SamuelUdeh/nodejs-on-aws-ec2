@@ -68,8 +68,9 @@ npm run start
 ``
 chmod 400 rent.pem
 ssh -i keypair.pem ec2-user@<your-ec2-public-ip>
+
 # For Ubuntu, use:
-# ssh -i rent.pem ubuntu@<your-ec2-public-ip>
+# ssh -i keypair.pem ubuntu@<your-ec2-public-ip>
 ``
 
 ![NodeEC2SSH](https://github.com/user-attachments/assets/5cd30456-bd19-4c9e-becd-fefe369b6be3)
@@ -116,9 +117,13 @@ Create a .env file with the same content as before:
 
 ``
 DOMAIN=""
+
 PORT=3000
+
 STATIC_DIR="./client"
+
 PUBLISHABLE_KEY=""
+
 SECRET_KEY=""
 ``
 

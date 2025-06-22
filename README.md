@@ -21,10 +21,15 @@ npm install
 npm run start
 # Set up an AWS EC2 instance
 Create and log in as IAM user to your AWS Console
+
 Access Type - Password
+
 Permissions - Admin
+
 Create an EC2 instance
+
 Select an OS image - Ubuntu
+
 Create a new key pair & download .pem file
 Instance type - t2.micro
 Connecting to the instance using SSH
@@ -36,7 +41,7 @@ Install Git - Guide by DigitalOcean
 Configure Node.js and npm - Guide by DigitalOcean
 # Deploying the project on AWS
 # Clone this project in the remote VM
-git clone https://github.com/verma-kunal/AWS-Session.git
+git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
 # Setup the following environment variables - (.env) file
 DOMAIN= ""
 

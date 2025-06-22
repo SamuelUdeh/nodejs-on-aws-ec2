@@ -32,7 +32,6 @@ PUBLISHABLE_KEY=""
 SECRET_KEY=""
 ``
 
-
 3. **Initialise and start the project**
 
 ``
@@ -67,13 +66,12 @@ npm run start
 ## Step 2: SSH Into EC2
 
 ``
-
-```bash
 chmod 400 rent.pem
 ssh -i keypair.pem ec2-user@<your-ec2-public-ip>
 # For Ubuntu, use:
 # ssh -i rent.pem ubuntu@<your-ec2-public-ip>
 ``
+
 ![NodeEC2SSH](https://github.com/user-attachments/assets/5cd30456-bd19-4c9e-becd-fefe369b6be3)
 
 ## Step 3: **Install Node.js on EC2**
@@ -85,6 +83,7 @@ sudo yum update -y
 curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install -y nodejs
 ``
+
 **On Ubuntu:**
 
 ``
@@ -149,60 +148,6 @@ You have successfully deployed a Node.js application on AWS EC2.
 # License
 This project is licensed under the MIT License. 
 
-
-
-
-
-
-
-
-
-
-
-
-
----
-Create and log in as an IAM user to your AWS Console
-
-Access Type - Password
-
-Permissions - Admin
-
-Create an EC2 instance
-
-Select an OS image - Ubuntu
-
-Create a new key pair & download .pem file
-Instance type - t2.micro
-Connecting to the instance using SSH
-ssh -i instance.pem ubunutu@<IP_ADDRESS>
-# Configuring Ubuntu on a remote VM
-Updating the outdated packages and dependencies
-sudo apt update
-Install Git - Guide by DigitalOcean
-Configure Node.js and npm - Guide by DigitalOcean
-# Deploying the project on AWS
-# Clone this project in the remote VM
-git clone https://github.com/SamuelUdeh/nodejs-on-aws-ec2.git
-# Setup the following environment variables - (.env) file
-DOMAIN= ""
-
-PORT=3000
-
-STATIC_DIR="./client"
-
-PUBLISHABLE_KEY=""
-
-SECRET_KEY=""
-# Initialise and start the project
-npm install
-
-npm run start
-
-NOTE - I edited the inbound rules in the security group of our EC2, in order
-to allow traffic from our particular port. 
-
-The project is deployed on AWS and can be accessed using the IPV4 Public Ip address
 
 
 
